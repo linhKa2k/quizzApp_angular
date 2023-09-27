@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="title">
+        <h2>DEMO CRUD ANGULAR</h2>
+    </div>
+    <div >
+        <table>
+            <thead>
+                <input [(ngModel)]="User.name" placeholder="name" />
+                <input [(ngModel)]="User.age" placeholder="age" />
+                <input [(ngModel)]="User.address" placeholder="address" />
+                <button (click)="handleAdd()">ADD</button>
+                <button (click)="handleUpdate()">Update</button>
+               
+            </thead>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>age</th>
+                    <th>address</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of listData">
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.age}}</td>
+                    <td>{{item.address}}</td>
+                    <td><button (click)="handleDelete(item.id)">Xoa</button></td>
+                    <td><button (click)="select(item)">Put</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<router-outlet name="home"></router-outlet>

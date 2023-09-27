@@ -1,0 +1,29 @@
+{
+    "item": [
+        {
+            "id": 1,
+            "tenBoCauHoi": "khoa hoc"
+        },
+        {
+            "id": 2,
+            "tenBoCauHoi": "cong nghe"
+        },
+        {
+            "id": 3,
+            "tenBoCauHoi": "tin hoc"
+        },
+        {
+            "id": 4,
+            "tenBoCauHoi": "y khoa"
+        },
+        {
+            "id": 5,
+            "tenBoCauHoi": "co phieu"
+        },
+        {
+            "id": 6,
+            "tenBoCauHoi": "lich su"
+        }
+    ]
+
+}
